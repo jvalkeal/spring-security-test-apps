@@ -53,7 +53,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 			.logout()
 				.permitAll()
 				.and()
-			.addFilterBefore(spnegoAuthenticationProcessingFilter(authenticationManagerBean()),	BasicAuthenticationFilter.class);
+			.addFilterBefore(
+					spnegoAuthenticationProcessingFilter(authenticationManagerBean()),
+					BasicAuthenticationFilter.class);
 	}
 
 	@Override
