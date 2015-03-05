@@ -90,6 +90,16 @@ project('sec-server-client-auth') {
 	}
 }
 
+project('sec-server-spnego-form-auth') {
+	description = "Spnego with form auth server"
+
+	dependencies {
+		compile "org.springframework.boot:spring-boot-starter-security:$springBootVersion"
+		compile "org.springframework.boot:spring-boot-starter-thymeleaf:$springBootVersion"
+		compile "org.springframework.security.kerberos:spring-security-kerberos-core:$springSecurityKerberosVersion"
+	}
+}
+
 configure(rootProject) {
 	description = 'Spring State Machine'
 
