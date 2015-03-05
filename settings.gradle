@@ -1,3 +1,4 @@
 rootProject.name = 'spring-security-test-apps'
 
 include 'sec-server-win-auth'
+include 'sec-server-client-auth'
